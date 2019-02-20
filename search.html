@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+<style type="text/css">
+    
+.login-clean {
+  background:white/*#f1f7fc*/;
+  padding:80px 0;
+}
+
+.login-clean form {
+  max-width:700px;
+  width:50%;
+  margin:0 auto;
+  background-color:white/*#ffffff*/;
+  padding:40px;
+  border-radius:4px;
+  color:#505e6c;
+  box-shadow:none/*1px 1px 5px rgba(0,0,0,0.1)*/;
+}
+
+.login-clean .illustration {
+  text-align:center;
+  padding:0 0 20px;
+  font-size:100px;
+  color:rgb(244,71,107);
+  /*background-image: url(img/logo.jpg);*/
+}
+
+.login-clean form .form-control {
+  background:#f7f9fc;
+  border:none;
+  border-bottom:1px solid #dfe7f1;
+  border-radius:0;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:8px;
+  height:42px;
+  /*width: 30%;
+}*/
+
+.login-clean form .btn-primary {
+  background:#F05F40;
+  border:none;
+  border-radius:4px;
+  padding:11px;
+  box-shadow:none;
+  margin-top:26px;
+  text-shadow:none;
+  outline:none !important;
+}
+
+.login-clean form .btn-primary:hover, .login-clean form .btn-primary:active {
+  background:#F05F40;
+}
+
+.login-clean form .btn-primary:active {
+  transform:translateY(1px);
+}
+
+.login-clean form .forgot {
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#6f7a85;
+  opacity:0.9;
+  text-decoration:none;
+}
+
+.login-clean form .forgot:hover, .login-clean form .forgot:active {
+  opacity:1;
+  text-decoration:none;
+}
+
+
+</style>
+
+
+
+
+<body>
+        <header class="hidden-sm hidden-md hidden-lg">
+        <div class="searchbox">
+            <form>
+                <h1 class="text-left">CANYDO</h1>
+               <!-- <div class="searchbox"><i class="glyphicon glyphicon-search"></i>
+                    <input class="form-control" type="text">
+                </div> -->
+                <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">МЕНЮ <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li role="presentation"><a href="profile.php">Мій профіль</a></li>
+                               <li role="presentation"><a href="followers.html">Мої студенти</a></li>
+                                <!-- <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="#">Стрічка новин </a></li>
+                                <li role="presentation"><a href="#">Повідомлення </a></li>
+                                <li role="presentation"><a href="#">Сповіщення </a></li>
+                                <li role="presentation"><a href="#">Мій аккаунт</a></li> -->
+                                <li role="presentation"><a href="logout.php">Вийти</a></li>
+                </div>
+            </form>
+        </div>
+        <hr>
+    </header>
+
+
+
+    
+    <div>
+        <nav class="navbar navbar-default hidden-xs navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><img src="img/logo.jpg" width="25%"  height="10%"><!-- <i class="icon ion-ios-navigate"></i> --></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <form class="navbar-form navbar-left">
+                       <!--  <div class="searchbox"><i class="glyphicon glyphicon-search"></i>
+                            <input class="form-control" type="text">
+                        </div> -->
+                    </form>
+                    <ul class="nav navbar-nav hidden-md hidden-lg navbar-right">
+                        <li role="presentation"><a href="#">Моя Стрічка новин</a></li>
+                        <li class="dropdown open"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#">Користувач <span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li role="presentation"><a href="profile.php">Мій профіль</a></li>
+                               <li role="presentation"><a href="followers.html">Мої студенти</a></li>
+                                <!-- <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="#">Стрічка новин </a></li>
+                                <li role="presentation"><a href="#">Повідомлення </a></li>
+                                <li role="presentation"><a href="#">Сповіщення </a></li>
+                                <li role="presentation"><a href="#">Мій аккаунт</a></li> -->
+                                <li role="presentation"><a href="logout.php">Вийти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav hidden-xs hidden-sm navbar-right">
+                        <li  role="presentation"><a href="#">Стрічка новин</a></li>  <!-- class="active" -->
+
+                        <li role="presentation"><a href="#">Повідомлення</a></li>
+                        <li role="presentation"><a href="messages.php">Сповіщення</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Користувач<span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                               <li role="presentation"><a href="profile.php">Мій профіль</a></li>
+                               <li role="presentation"><a href="followers.html">Мої студенти</a></li>
+                                <!-- <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="#">Стрічка новин </a></li>
+                                <li role="presentation"><a href="#">Повідомлення </a></li>
+                                <li role="presentation"><a href="#">Сповіщення </a></li>
+                                <li role="presentation"><a href="#">Мій аккаунт</a></li> -->
+                                <li role="presentation"><a href="logout.php">Вийти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+<h2 style="text-align:center;" >Знайти тьютора</h2>
+  <div class="login-clean">
+            
+       <form method="post" action="create-account.php"> <!-- Action??? вписать правильный. или создать еще PHP по типу этого. чтоб правильно записывало в базу -->
+            
+            
+                 <div class="form-group">
+                <!-- <input class="form-control" id="circle" type="text" name="circle" placeholder="Курс">
+ -->
+                <label>Виберіть курс</label>
+                <select  name="circle" id="Result" onchange="CheckChoice()">
+                    <option disabled>Виберіть курс</option>
+                    <option value="1">1</option>
+                    <option selected value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                   </select>
+
+                  </div>
+
+
+            <div class="form-group">
+                <!-- <p id="demo"></p> -->
+              
+              <label>Виберіть спеціальність</label>
+                <select  name="spesiality" id="Result" onchange="CheckChoice()">
+                    <option disabled>Виберіть спеціальність</option>
+                    <option value="1">Комп'ютерні науки</option>
+                    <option selected value="2">Медична інженерія</option>
+                    <option value="3">Реабілітація</option>
+                    <option value="4">Приладобудування</option>
+                   </select>
+            </div>
+
+
+            <div class="form-group">
+               <!--  <p id="demo"></p> -->
+              
+              <label>Виберіть предмет</label>
+                <select  name="subject" id="Result" onchange="CheckChoice()">
+                    <option disabled>Виберіть предмет</option>
+                    <option value="1">Математика</option>
+                    <option selected value="2">Фізика</option>
+                    <option value="3">Системний аналіз</option>
+                    <option value="4">Молекулярна біологія</option>
+                   </select>
+            </div>
+           
+           
+           
+
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" id="ca" type="button" data-bs-hover-animate="shake">Шукати</button>
+            </div><a href="#" class="forgot">Повернутись до профілю</a>
+   
+  
+        </form></div> 
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('#ca').click(function() {
+
+                $.ajax({
+
+                        type: "POST",
+                        url: "api/users",
+                        processData: false,
+                        contentType: "application/json",
+                        data: '{ "major": "'+ $("#major").val() +'", "circle": "'+ $("#circle").val() +'", "mobile": "'+ $("#mobile").val() +'","photo": "'+ $("#photo").val() +'" }',
+                        success: function(r) {
+                                console.log(r)
+                        },
+                        error: function(r) {
+                                setTimeout(function() {
+                                $('[data-bs-hover-animate]').removeClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'));
+                                }, 2000)
+                                $('[data-bs-hover-animate]').addClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'))
+                                console.log(r)
+                        }
+
+                });
+
+        });
+
+
+
+function CheckChoice() {
+    var x = document.getElementById("Result").value;
+    if(x == "1"){
+       document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+    if(x == "2"){
+       document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+    if(x == "3"){
+       document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+    if(x == "4"){
+       document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+}
+
+
+
+
+
+//         function CheckChoice(option)
+// {
+//   // Verify that the input is a number.
+//   // if (typeof(option) != "number")
+//   // {
+//   //  // Display an error dialog.
+//   //  alert("Please provide numeric input!");
+//   //  // Return without doing anything more.
+//   //  return;
+//   // }
+//   // Ensure that option is actually an integer.
+//   var Select = Math.round(option);
+//   // Verify that the input is in range.
+  
+//   // Make a selection.
+//   if (Select == 1)
+//   {
+//    document.getElementById("Result").innerHTML =
+//      "You chose Item A.";
+//   }
+//     else
+//   {
+//        if (Select == 2)
+//        {
+//          document.getElementById("Result").innerHTML =
+//           "You chose Item B.";
+//        }
+//        else
+//       {
+//            if (Select == 3)
+//            {
+//              document.getElementById("Result").innerHTML =
+//               "You chose Item B.";
+//            } 
+//             else
+//             {
+//                if (Select == 4)
+//                {
+//                  document.getElementById("Result").innerHTML =
+//                   "You chose Item B.";
+//                } 
+//            }
+//        }
+//   }
+// }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialNetwork</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom fonts for this template -->
+    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
+
+    <!-- Plugin CSS -->
+    <!-- <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+</head>
+
+ <style type="text/css">
+     .wow{
+        margin-left: 30%;
+        padding: 0 0 0 0;
+        margin-bottom: 0;
+        margin-top: 0;
+     }
+     button{
+        margin-left: 29%;
+        background-color: #505e6c; /* Green */
+        border: none;
+        color: white;
+        border-radius: 20px;
+        padding: 5px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 15px;
+     }
+ </style>   
+    
+<body>
+     <header class="hidden-sm hidden-md hidden-lg">
+        <div class="searchbox">
+            <form>
+                <h1 class="text-left">CANYDO</h1>
+
+               <!-- <div class="searchbox"><i class="glyphicon glyphicon-search"></i>
+                    <input class="form-control" type="text">
+                </div> -->
+                <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">МЕНЮ <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li role="presentation"><a href="profile.php">Мій профіль</a></li>
+                               <li role="presentation"><a href="followers.html">Мої студенти</a></li>
+                                <!-- <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="#">Стрічка новин </a></li>
+                                <li role="presentation"><a href="#">Повідомлення </a></li>
+                                <li role="presentation"><a href="#">Сповіщення </a></li>
+                                <li role="presentation"><a href="#">Мій аккаунт</a></li> -->
+                                <li role="presentation"><a href="logout.php">Вийти</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <hr>
+    </header>
+
+
+
+    
+    <div>
+        <nav class="navbar navbar-default hidden-xs navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><img src="img/logo.jpg" width="40px"  height="40px"><!-- <i class="icon ion-ios-navigate"></i> --></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <!-- <form class="navbar-form navbar-left">
+                        <div class="searchbox"><i class="glyphicon glyphicon-search"></i>
+                            <input class="form-control" type="text">
+                        </div>
+                    </form> -->
+                    <ul class="nav navbar-nav hidden-md hidden-lg navbar-right">
+                        <li role="presentation"><a href="#">Моя Стрічка новин</a></li>
+                        <li class="dropdown open"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#">Користувач <span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li role="presentation"><a href="profile.php">Мій профіль</a></li>
+                               <li role="presentation"><a href="followers.html">Мої студенти</a></li>
+                                <!-- <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="#">Стрічка новин </a></li>
+                                <li role="presentation"><a href="#">Повідомлення </a></li>
+                                <li role="presentation"><a href="#">Сповіщення </a></li>
+                                <li role="presentation"><a href="#">Мій аккаунт</a></li> -->
+                                <li role="presentation"><a href="logout.php">Вийти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav hidden-xs hidden-sm navbar-right">
+                        <li  role="presentation"><a href="#">Стрічка новин</a></li><!-- class="active" -->
+                        
+                        <li role="presentation"><a href="#">Повідомлення</a></li>
+                        <li role="presentation"><a href="#">Сповіщення</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Користувач<span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                               <li role="presentation"><a href="profile.php">Мій профіль</a></li>
+                               <li role="presentation"><a href="followers.html">Мої студенти</a></li>
+                                <!-- <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="#">Стрічка новин </a></li>
+                                <li role="presentation"><a href="#">Повідомлення </a></li>
+                                <li role="presentation"><a href="#">Сповіщення </a></li>
+                                <li role="presentation"><a href="#">Мій аккаунт</a></li> -->
+                                <li role="presentation"><a href="logout.php">Вийти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+<h2 style="text-align:center;" >Мої студенти</h2>
+
+
+<a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="" height="40%" width="40%">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Ольга Гусєва
+                  </div>
+                 <!--  <div class="project-name">
+                    Вища математика
+                  </div> -->
+                </div>
+              </div>
+            </a>
+            <b><a href=""><p class="wow">Ольга Гусєва</p></a></b>
+            <!-- <p class="wow">Вища математика</p> -->
+            <button  id="ca" type="button" data-bs-hover-animate="shake"  ">Видалити з друзів</button>
+
+
+<a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="" height="40%" width="40%">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Анна Бугай
+                  </div>
+                  <!-- <div class="project-name">
+                    Веб-програмування
+                  </div> -->
+                </div>
+              </div>
+              <b><a href=""><p class="wow">Анна Бугай</p></a></b>
+            <!-- <p class="wow">Веб-програмування</p> -->
+            <button  id="ca" type="button" data-bs-hover-animate="shake"  ">Видалити з друзів</button>
+
+
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="" height="40%" width="40%">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Влад Бондаренко
+                  </div>
+                  <!-- <div class="project-name">
+                    Анатомія
+                  </div> -->
+                </div>
+              </div>
+            </a>
+            <b><a href=""><p class="wow">Влад Бондаренко</p></a></b>
+            <!-- <p class="wow">Анатомія</p> -->
+            <button  id="ca" type="button" data-bs-hover-animate="shake"  ">Видалити з друзів</button>
+
+
+
+            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="" height="50%" width="50%">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Соломія Іванова
+                  </div>
+                  <!-- <div class="project-name">
+                    Фізика
+                  </div> -->
+                </div>
+              </div>
+            </a>
+            <b><a href=""><p class="wow">Соломія Іванова</p></a></b>
+            <!-- <p class="wow">Фізика</p> -->
+            <button  id="ca" type="button" data-bs-hover-animate="shake"  ">Видалити з друзів</button>
+         <!--  <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="" height="50%" width="50%">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Артем
+                  </div>
+                  <div class="project-name">
+                    Анатомія
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <button class="btn btn-primary btn-block "  id="ca" type="button" data-bs-hover-animate="shake"  style=" width:20%; background-color: #505e6c;">Видалити з друзів</button>
+
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="" height="50%" width="50%">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Дмитро
+                  </div>
+                  <div class="project-name">
+                    Фізика
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <button class="btn btn-primary btn-block" id="ca" type="button" data-bs-hover-animate="shake"  style=" width:20%; background-color: #505e6c;">Видалити з друзів</button> -->
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('#ca').click(function() {
+
+                $.ajax({
+
+                        type: "POST",
+                        url: "api/users",
+                        processData: false,
+                        contentType: "application/json",
+                        data: '{ "username": "'+ $("#username").val() +'", "email": "'+ $("#email").val() +'", "password": "'+ $("#password").val() +'" }',
+                        success: function(r) {
+                                console.log(r)
+                        },
+                        error: function(r) {
+                                setTimeout(function() {
+                                $('[data-bs-hover-animate]').removeClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'));
+                                }, 2000)
+                                $('[data-bs-hover-animate]').addClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'))
+                                console.log(r)
+                        }
+
+                });
+
+        });
+    </script>
+</body>
+
+</html>
